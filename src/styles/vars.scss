@@ -1,0 +1,18 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+    // base
+    --font-family: "Manrope", "Arial", "Helvetica Neue", Helvetica, "Arial Rub", sans-serif;
+    --content-width: 1315px;
+    --container-offset: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  
+    // colors
+    --light-color: #ffffff;
+    --accent-color: #F2F1F0;
+    --dark-color: #000000;
+    --grey-color: #757575;
+    --accent-color-2: #0af;
+    --hover-color: tomato;
+  }
+  

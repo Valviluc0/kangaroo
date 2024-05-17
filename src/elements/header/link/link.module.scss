@@ -1,0 +1,23 @@
+.link{
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    text-decoration: none;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover{
+        color: var(--hover-color);
+        fill: var(--hover-color);
+
+        & svg{
+            transform: rotate(180deg);
+        }
+    }
+
+    & svg{
+        margin-bottom: 2px;
+    }
+}

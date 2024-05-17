@@ -1,0 +1,34 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.link svg {
+    color: #8f8f8f;
+
+    &:hover {
+        color: #b8b8b8;
+    }
+}
+.item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    a{
+        white-space: nowrap;
+    }
+}
+
+.link:hover {
+    color: var(--hover-color);
+    fill: var(--hover-color);
+}

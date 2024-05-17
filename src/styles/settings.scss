@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.page { // <html>
+    height: 100%;
+    font-family: var(--font-family);
+    -webkit-text-size-adjust: 100%;
+}
+
+.page__body { // <body>
+    margin: 0;
+    min-width: 320px;
+    min-height: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 50px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.site-container {
+    overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+.main {
+    min-height: calc(100vh - 200px);
+}
+
+.is-hidden {
+    display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-reset {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    outline: none;
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        display: none;
+    }
+}
+
+.x-overflow {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+
+    &::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 var(--container-offset);
+    max-width: var(--container-width) !important;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.dis-scroll {
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+// .swiper {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     background: #fff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+
+.hidden-top {
+    position: fixed;
+    top: -70px !important;
+    transition: 0.2s linear;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+// .switch {
+//     position: relative;
+//     display: inline-block;
+//     width: 32px;
+//     height: 16px;
+// }
+
+// .switch input {
+//     display: none;
+// }
+
+// .slider {
+//     position: absolute;
+//     cursor: pointer;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: #ebeae8;
+//     -webkit-transition: 0.4s;
+//     transition: 0.4s;
+
+//     &:hover {
+//         background-color: #dbdbd9;
+//         -webkit-transition: 0.4s;
+//         transition: 0.4s;
+//     }
+// }
+
+// .slider:before {
+//     position: absolute;
+//     content: "";
+//     height: 12px;
+//     width: 12px;
+//     left: 2px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     bottom: 4px;
+//     background-color: white;
+//     -webkit-transition: 0.4s;
+//     transition: 0.4s;
+// }
+
+// input:checked + .slider {
+//     background-color: #2196f3;
+// }
+
+// input:focus + .slider {
+//     box-shadow: 0 0 1px #2196f3;
+// }
+
+// input:checked + .slider:before {
+//     -webkit-transform: translateX(14px) translateY(-50%);
+//     -ms-transform: translateX(14px) translateY(-50%);
+//     transform: translateX(14px translateY(-50%));
+// }
+
+// .slider.round {
+//     border-radius: 34px;
+// }
+
+// .slider.round:before {
+//     border-radius: 50%;
+// }
+
+// .static-header .header__wrapper {
+//     position: static !important;
+//     box-shadow: none !important;
+// }
+
+// .arrow {
+//     display: inline-flex;
+//     align-items: stretch;
+// }
+
+// .arrow__text {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 12px;
+//     font-weight: 500;
+// }
+// .special-main {
+//     display: flex;
+//     align-items: flex-start;
+//     gap: 50px;
+// }
